@@ -1,0 +1,199 @@
+body{
+    background-color: pink;
+    font-family: Arial;
+}
+*{/*menu*/
+     margin: 0;
+     padding: 0; /*Espacio entre el contenido del elemento y su borde*/
+     -webkit-box-sizing: border-box; /*Calcular las medidas de un elemento */
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+.navegacion{
+     width: 1000px;
+     margin: 30px auto;
+     background: #fff;
+}
+.navegacion ul{
+     list-style: none; /*Quita las viñetas de lista*/
+}
+
+.menu > li{
+     position: relative; /*la etiqueta position especifica cómo un elemento es posicionado en el documento */
+     display: inline-block; /*lista horizontal menu*/
+}
+
+.menu >li > a{
+     display: block; /* Establece los tipos de visualización interna y externa de un elemento*/
+     padding: 15px 20px; /*Tamaño del menu del menú*/
+     color: red;
+     font-family: 'Open sans';
+     text-decoration: none; /* No se pinga ningun subrrayado ni biñetas*/
+}
+.menu li a:hover{ /*Darle color a las letras del menú*/
+     color: yellow;
+     transition: all .3s; /*Darle transición al color de las letras del menú*/
+}
+
+/*submenu*/
+.submenu{
+position: absolute;/*la etiqueta position especifica cómo un elemento es posicionado en el documento */
+background: #333333;
+width: 1200;
+visibility: hidden; /*Visualiuzar el efecto de selección, hidden esconde el elemento pero deja vacio el espacio*/
+opacity: 0; /*transparencia del elemento*/
+transition: opacity 1.5a;
+}
+.submenu li a{
+display: block; /*Espacio entre */
+padding: 15px; /*Espacio entre palabras*/
+color: orange; /*Color de la letra*/
+font-family: 'Open sans'; /*tipo de letra*/
+text-decoration: none;
+}
+.menu li:hover .submenu{ /*Ocultar el submenu*/
+visibility: visible; /*Al pasar el cursor al menu se visualiza el submenu*/
+opacity: 1;
+}
+.subm{
+position: absolute;/*la etiqueta position eapecifica cómo un elemento es posicionado en el documento*/
+background: #333333;
+width: 1204;
+visibility: hidden; /*Visualiuzar el efecto de selección, hidden esconde el elemento pero deja vacio el espacio*/
+opacity: O; /*transparencia del elemento*/
+transition: opacity 1.5a;
+}
+
+.subm li a{
+display: block;
+padding: 15px;
+color: blue;
+font-family: 'Open sans';
+text-decoration: none;
+}
+
+.menu li:hover .subm{ /*Ocultar el submenu*/
+visibility: visible; /*Al pasar el cursor al menu se visualiza el submenu*/
+opacity: 1;
+}
+h1.titulo{
+	color: red;
+	text-align: center;
+}
+p.parrafo1{
+	Color: yellow;
+	text-align: justify;
+	font-weight: 30;
+	font-family: arial;
+	font-size: 20px;
+	
+}
+p.parrafo2{
+	Color: orange;
+	text-align: justify;
+	font-weight: 50;
+	font-family: arial;
+	font-size: 30px;
+	
+}
+.img{
+	width: 300px;
+	height: 300px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black;
+	display: block;
+	margin: 0px auto;
+}
+p.im{
+	color: blue;
+	font-family: cursive;
+	font-size: x.large;
+}
+
+.img{
+	width: 300px;
+	height: 300px;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid black;
+	display: block;
+	margin: 0px auto;
+}
+
+.hipervinculo{
+	float: left;
+}
+
+.video{
+	width:500px;
+	height:500;
+	float: left;
+
+}
+
+p.im{
+	color: blue;
+	font-family: cursive;
+    font-size: x.large;
+}
+p.hi{
+	color: green;
+	font-family: cursive;
+	font-size: x-large;
+}
+
+p.vi{
+	color: orange;
+	font-family: cursive;
+	font-size: x-large;
+}
+
+	body{
+    background-color: #435380;
+    font-family: Arial;
+}
+
+*{/* menu */
+
+    margin: 0;
+    padding: 0; /*Espacio entre el contenido del elemento y su borde*/
+    -webkit-box-sizing: border-box; /*Calcular las medidas de un elemento */
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*tabla*/
+#tabla{
+    margin: 150px auto;
+    width: 600px;
+    float: center;  /*ubica un elemento en su contenedor según la posición dada*/
+}
+table{
+    background-color: white;
+    text-align: left;
+    border-collapse: collapse;  /*Fusionar los bordes*/
+    width:100%;
+}
+
+th, td{
+    border: solid 1px black;
+    padding: 5px;
+}
+
+thead{/*Bloque de filas*/
+    background-color: #246355;
+    border-bottom: solid 5px #0F362D; /*Establece el estilo del borde inferior de un elemento, se define el estilo, grosor y color*/
+    color: white;
+}
+
+tr:nth-child(even){ /*Selección de varios elementos hijo, selección de una línea y otra no*/
+    background-color: #ddd;
+}
+
+tr:hover td{/*Al seleccionar una fila colorea el espacio y la letra la pasa a blanco */
+    background-color: #369681;
+    color: white;
+}
+
+
